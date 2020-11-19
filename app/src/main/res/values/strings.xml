@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">LocationServices</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <!-- Strings used for location generation form -->
+    <string name="name_label">Name:</string>
+    <string name="description_label">Description:</string>
+    <string name="category_label">Category:</string>
+    <string name="addr_title_label">Address Title:</string>
+    <string name="addr_street_label">Address Street:</string>
+    <string name="elevation_label">Elevation:</string>
+    <string name="lat_label">Latitude:</string>
+    <string name="long_label">Longitude:</string>
+
+    <string name="name_input">Location Name</string>
+    <string name="description_input">Location Description</string>
+    <string name="category_input">Location Category</string>
+    <string name="addr_title_input">Address Title</string>
+    <string name="addr_street_input">Address Street</string>
+
+    <string name="create_button_title">Create</string>
+
+    <!-- Strings used for status dialog -->
+    <string name="create_title_success">Success!</string>
+    <string name="create_title_fail">Fail!</string>
+
+    <string name="create_msg_success">Location was successfully created.</string>
+    <string name="create_msg_fail">Location creation was unsuccessful. Ensure all fields are properly filled out before executing.</string>
+</resources>
