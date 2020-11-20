@@ -59,9 +59,8 @@ public class PlaceDescription {
         this.longitude = longitude;
     }
 
-    PlaceDescription(String jsonStr) {
+    PlaceDescription(JSONObject jo) {
         try {
-            JSONObject jo = new JSONObject(jsonStr);
             name = jo.getString("name");
             description = jo.getString("description");
             category = jo.getString("category");

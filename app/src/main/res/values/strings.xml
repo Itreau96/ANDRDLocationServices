@@ -28,4 +28,11 @@
 
     <string name="create_msg_success">Location was successfully created.</string>
     <string name="create_msg_fail">Location creation was unsuccessful. Ensure all fields are properly filled out before executing.</string>
+    <string name="title_activity_lib_view">LibViewActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 </resources>
