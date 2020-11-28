@@ -19,22 +19,20 @@ limitations under the License.
 
 package edu.asu.msse.ibigsby.locationservices;
 
-import org.json.JSONArray;
-import org.json.JSONObject;
+import java.io.Serializable;
 
-import java.util.Vector;
-import java.math.BigDecimal;
+public class PlaceDescription implements Serializable {
+    public String name;
+    public String description;
+    public String category;
+    public String addrTitle;
+    public String addrStreet;
+    public float elevation;
+    public float latitude;
+    public float longitude;
+    public int id;
 
-public class PlaceDescription {
-    private String name;
-    private String description;
-    private String category;
-    private String addrTitle;
-    private String addrStreet;
-    private float elevation;
-    private float latitude;
-    private float longitude;
-
+    // Empty initializer
     PlaceDescription() {
         name = "";
         description = "";
@@ -44,11 +42,13 @@ public class PlaceDescription {
         elevation = 0;
         latitude = 0;
         longitude = 0;
+        id = -1;
     }
 
+    // Initializer with required values
     PlaceDescription(String name, String description, String category,
              String addrTitle, String addrStreet, float elevation,
-             float latitude, float longitude) {
+             float latitude, float longitude, int id) {
         this.name = name;
         this.description = description;
         this.category = category;
@@ -57,40 +57,6 @@ public class PlaceDescription {
         this.elevation = elevation;
         this.latitude = latitude;
         this.longitude = longitude;
-    }
-
-    PlaceDescription(JSONObject jo) {
-        try {
-            name = jo.getString("name");
-            description = jo.getString("description");
-            category = jo.getString("category");
-            addrTitle = jo.getString("addrTitle");
-            addrStreet = jo.getString("addrStreet");
-            elevation = BigDecimal.valueOf(jo.getDouble("elevation")).floatValue();
-            latitude = BigDecimal.valueOf(jo.getDouble("latitude")).floatValue();
-            longitude = BigDecimal.valueOf(jo.getDouble("longitude")).floatValue();
-        } catch (Exception ex) {
-            android.util.Log.w(this.getClass().getSimpleName(),
-                    "error converting to/from json");
-        }
-    }
-
-    public String getJson() {
-        String ret = "";
-        try {
-            JSONObject jo = new JSONObject();
-            jo.put("name", name);
-            jo.put("description", description);
-            jo.put("category", category);
-            jo.put("addrTitle", addrTitle);
-            jo.put("addrStreet", addrStreet);
-            jo.put("elevation", elevation);
-            jo.put("latitude", latitude);
-            jo.put("longitude", longitude);
-        } catch (Exception ex) {
-            android.util.Log.w(this.getClass().getSimpleName(),
-                    "error converting to/from json");
-        }
-        return ret;
+        this.id = id;
     }
 }

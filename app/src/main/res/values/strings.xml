@@ -1,10 +1,16 @@
 <resources>
     <string name="app_name">LocationServices</string>
     <string name="action_settings">Settings</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
-    <!-- Strings used for location generation form -->
+
+    <!-- Strings used for map calculation activity -->
+    <string name="default_calculation_instruction">Select a mapping category from the options below:</string>
+    <string name="calculate_button_title">Calculate</string>
+    <string name="default_calculation">0</string>
+    <string-array name="map_options_array">
+        <item>Distance</item>
+        <item>Bearing</item>
+    </string-array>
+    <!-- Strings used for location generation activity -->
     <string name="name_label">Name:</string>
     <string name="description_label">Description:</string>
     <string name="category_label">Category:</string>
@@ -20,7 +26,7 @@
     <string name="addr_title_input">Address Title</string>
     <string name="addr_street_input">Address Street</string>
 
-    <string name="create_button_title">Create</string>
+    <string name="done_button_title">Create</string>
 
     <!-- Strings used for status dialog -->
     <string name="create_title_success">Success!</string>
@@ -29,6 +35,9 @@
     <string name="create_msg_success">Location was successfully created.</string>
     <string name="create_msg_fail">Location creation was unsuccessful. Ensure all fields are properly filled out before executing.</string>
     <string name="title_activity_lib_view">LibViewActivity</string>
+    <!-- Strings used for toolbar -->
+    <string name="action_map">Map</string>
+    <string name="title_activity_test">testActivity</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>

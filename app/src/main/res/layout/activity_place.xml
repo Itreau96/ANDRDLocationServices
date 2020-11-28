@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".PlaceActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -32,18 +32,18 @@
 
             <TextView
                 android:id="@+id/nameLabel"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:text="@string/name_label" />
 
             <EditText
                 android:id="@+id/nameInput"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="@string/name_input" />
+                android:hint="@string/name_input" />
         </TableRow>
 
         <TableRow
@@ -52,18 +52,18 @@
 
             <TextView
                 android:id="@+id/descLabel"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:text="@string/description_label" />
 
             <EditText
                 android:id="@+id/descInput"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="@string/description_input" />
+                android:hint="@string/description_input" />
         </TableRow>
 
         <TableRow
@@ -79,11 +79,11 @@
 
             <EditText
                 android:id="@+id/categoryInput"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="@string/category_input" />
+                android:hint="@string/category_input" />
         </TableRow>
 
         <TableRow
@@ -92,18 +92,18 @@
 
             <TextView
                 android:id="@+id/addrTitleLabel"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:text="@string/addr_title_label" />
 
             <EditText
                 android:id="@+id/addrTitleInput"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="@string/addr_title_input" />
+                android:hint="@string/addr_title_input" />
         </TableRow>
 
         <TableRow
@@ -112,18 +112,18 @@
 
             <TextView
                 android:id="@+id/addrStreetLabel"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:text="@string/addr_street_label" />
 
             <EditText
                 android:id="@+id/addrStreetInput"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="@string/addr_street_input" />
+                android:hint="@string/addr_street_input" />
         </TableRow>
 
         <TableRow
@@ -132,14 +132,14 @@
 
             <TextView
                 android:id="@+id/elevationTitle"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:text="@string/elevation_label" />
 
             <EditText
                 android:id="@+id/elevationInput"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="numberDecimal" />
@@ -151,14 +151,14 @@
 
             <TextView
                 android:id="@+id/latitudeTitle"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:text="@string/lat_label" />
 
             <EditText
                 android:id="@+id/latitudeInput"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="numberDecimal|numberSigned" />
@@ -170,14 +170,14 @@
 
             <TextView
                 android:id="@+id/longitudeTitle"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:text="@string/long_label" />
 
             <EditText
                 android:id="@+id/longitudeInput"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="numberDecimal|numberSigned" />
@@ -186,11 +186,11 @@
     </TableLayout>
 
     <Button
-        android:id="@+id/createButton"
+        android:id="@+id/doneButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="createLocation"
-        android:text="@string/create_button_title"
+        android:onClick="doneClicked"
+        android:text="@string/done_button_title"
         app:layout_anchor="@+id/tableLayout"
         app:layout_anchorGravity="bottom|center" />
 

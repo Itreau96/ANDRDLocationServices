@@ -1,11 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--  Single List Item Design -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/placeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:padding="6dip"
+    android:layout_marginTop="?android:attr/actionBarSize">
 
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/label"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:padding="10dip"
-    android:textSize="16dip"
-    android:textStyle="bold" >
-</TextView>
+    <ImageButton
+        android:id="@+id/delete_place"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:background="@null"
+        android:padding="16dip"
+        app:srcCompat="@drawable/ic_remove_circle_blue_24dp" />
+
+    <TextView
+        android:id="@+id/place_label"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/delete_place"
+        android:layout_toEndOf="@+id/delete_place"
+        android:padding="10dip"
+        android:text="Example Text"
+        android:textSize="16dip"
+        android:textStyle="bold" />
+
+</RelativeLayout>
